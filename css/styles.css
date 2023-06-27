@@ -4,6 +4,7 @@ body{
 	background: url('../images/Front.png')no-repeat;
 	width: 1200px
 	height:800px;
+	font-family: 'Oxygen',sans-serif;
 }
 
 #header-nav{
@@ -17,4 +18,30 @@ body{
 	width: 220px;
 	height: 200px;
 	margin: 10px 15px 10px 0;
+}
+.navbar-brand{
+	padding-top: 25px;
+}
+.navbar-brand h1{
+	font-family:'Lora',serif;
+	color: #ffff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+.navbar-brand a:hover,.navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-brand p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+}
+.navbar-brand p span{
+	vertical-align: middle;
 }
