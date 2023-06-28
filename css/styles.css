@@ -151,7 +151,34 @@ body{
 	opacity: .7;
 }
 
-
+/**course page**/
+.category-tile{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin :0 auto 15px; 
+}
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .9;
+}
+.category-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#course-offered-tile+div{
+	margin-bottom: 50px;
+}
 /**Larger deivces**/
 @media(min-width: 1204px){
 .container .jumbotron{
@@ -203,6 +230,19 @@ body{
 		letter-spacing: .1em;
 		text-transform: uppercase;
 	}
+
+
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.panel-footer section:nth-child(3){
+		margin-bottom: 0;
+	}
+	.panel-footer section hr{
+		width: 50%;
+	}
 	.container .jumbotron{
 		margin-top: 30px;
 		padding: 0;
@@ -223,5 +263,14 @@ body{
 	#course-tile,#special-course {
 		width: 280px;
 		margin: 0 auto;
+	}
+
+	.col-xxs-12{
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%; 
 	}
 }
