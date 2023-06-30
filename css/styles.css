@@ -20,7 +20,9 @@ body{
 }
 .navbar-brand{
 	padding-top: 25px;
+
 }
+
 .navbar-brand h1{
 	font-family:'Lora',serif;
 	color: #ffff;
@@ -31,6 +33,7 @@ body{
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: .75;
+	overflow: left;
 }
 .navbar-brand a:hover,.navbar-brand a:focus{
 	text-decoration: none;
@@ -76,8 +79,10 @@ body{
 }
 
 .navbar-header button.navbar-toggle{
-	clear: both;
-	margin-top: -120px
+	clear:both;
+	margin-top: -40px;
+	
+
 }
 
 
@@ -179,6 +184,54 @@ body{
 #course-offered-tile+div{
 	margin-bottom: 50px;
 }
+
+/**single category pages**/
+.course-item-title{
+	margin-bottom: 25px;
+}
+.course-item-title hr{
+	width: 100%;
+}
+.course-item-title .course-item-type{
+	font-size: 1.1em;
+	text-align: right;;
+	margin-top: -15px;
+	margin-right: -15px;
+}
+.course-item-title .course-item-type span{
+	font-size: .6em;
+}
+
+.course-item-photo{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: 0;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+.course-item-photo div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 250px;
+	font-size: 1.5em;
+	background-color: gray;
+	text-align: center;
+}
+.course-item-description{
+	padding-right: 30px;
+}
+h3.course-item-title{
+	margin: 0 0 10px;
+}
+.course-details{
+	font-size: 1.2em;
+	font-style: italic;
+}
+
 /**Larger deivces**/
 @media(min-width: 1204px){
 .container .jumbotron{
