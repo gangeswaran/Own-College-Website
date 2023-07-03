@@ -117,29 +117,24 @@ body{
 
 #course-tile,#special-course,#map-tile{
 	height: 250px;
-	width: 200px;
-	margin-left: 50px;
+	width: 100%;
 	margin-bottom: 15px;
 	position:relative;
 	border: 2px solid #3f0c1f;
 	overflow: hidden;
-	float: left;
+	
 }
 
 #course-tile:hover,#special-course:hover,#map-tile:hover{
-	box-shadow: 0 1px 5px 1px black;
+	box-shadow: 0 10px 50px 10px white;
 }
 
-#home-tile,#course-tile{
+#course-tile{
 	background: url('../images/course.jpg')no-repeat;
-	width: 200px;
-	height: 250px;
 	background-position: center;
 }
 #special-course{
 	background: url('../images/special.jpg');
-	width: 200px;
-	height: 250px;
 	background-position: center;
 }
 
