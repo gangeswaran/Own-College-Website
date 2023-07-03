@@ -23,7 +23,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var gce = {};
 
-var homeHtml = "/snippets/home-snippet.html";
+var homeHtml = "snippets/home-snippet.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
