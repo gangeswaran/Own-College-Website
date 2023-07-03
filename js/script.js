@@ -21,7 +21,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 (function (global) {
 
-var dc = {};
+var gce = {};
 
 var homeHtml = "/snippets/home-snippet.html";
 
@@ -53,6 +53,6 @@ $ajaxUtils.sendGetRequest(
 });
 
 
-global.$dc = dc;
+global.$gce = gce;
 
 })(window);
