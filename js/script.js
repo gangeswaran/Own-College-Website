@@ -20,7 +20,7 @@ var gce = {};
 var allcoursesUrl = "/courses.json";
 var homeHtml = "/home-snippet.html";
 var courseTitleHtml = "/course-title.html";
-var courseHtml = "course-snippet.html";
+var courseHtml = "/course-snippet.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
