@@ -17,10 +17,10 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var gce = {};
 
-var allcoursesUrl = "/data/courses.json";
-var homeHtml = "/snippets/home-snippet.html";
-var courseTitleHtml = "/snippets/course-title.html";
-var courseHtml = "/snippets/course-snippet.html";
+var allcoursesUrl = "courses.json";
+var homeHtml = "home-snippet.html";
+var courseTitleHtml = "course-title.html";
+var courseHtml = "course-snippet.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
