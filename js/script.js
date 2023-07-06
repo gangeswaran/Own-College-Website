@@ -8,12 +8,6 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
     }
   });
 
-  // In Firefox and Safari, the click event doesn't retain the focus
-  // on the clicked button. Therefore, the blur event will not fire on
-  // user clicking somewhere else in the page and the blur event handler
-  // which is set up above will not be called.
-  // Refer to issue #28 in the repo.
-  // Solution: force focus on the element that the click event fired on
   $("#navbarToggle").click(function (event) {
     $(event.target).focus();
   });
@@ -23,7 +17,10 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var gce = {};
 
-var homeHtml = "home-snippet.html";
+var allcoursesUrl = "/data/courses.json";
+var homeHtml = "/snippets/home-snippet.html";
+var courseTitleHtml = "/snippets/course-title.html";
+var courseHtml = "/snippets/course-snippet.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -37,6 +34,13 @@ var showLoading = function (selector) {
   html += "<img src='images/ajax-loader.gif'></div>";
   insertHtml(selector, html);
 };
+
+
+var insertProperty = function (string, propName, propValue) {
+  var propToReplace = "{{" + propName + "}}";
+  string = string.replace(new RegExp(propToReplace, "g"), propValue);
+  return string;
+}
 
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -52,6 +56,46 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
+gce.loadcourses = function (){
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(allcoursesUrl,buildAndShowCoursesHtml);
+};
+
+function buildAndShowCoursesHtml(courses){
+  $ajaxUtils.sendGetRequest(courseTitleHtml,function(courseTitleHtml){
+
+    $ajaxUtils.sendGetRequest(courseHtml,function(courseHtml){
+
+      var courseViewHtml = 
+      buildCourseViewHtml( courses,
+       courseTitleHtml,
+       courseHtml);
+      insertHtml("#main-content",courseViewHtml);
+    },
+    false);
+  },
+  false);
+}
+
+
+function buildCourseViewHtml(courses,courseTitleHtml,courseHtml){
+  var finalHtml = courseTitleHtml;
+  finalHtml += "<section class = 'row'>";
+
+  for (var i = 0 ; i < courses.length; i++){
+    var html = courseHtml;
+    var name = "" + courses[i].name;
+    var short_name = courses[i].short_name;
+    var item = courses[i].item;
+    html = insertProperty(html, "name", name);
+    html = insertProperty(html, "short_name", short_name);
+    html = insertProperty(html,"item", item)
+    finalHtml += html;
+  }
+
+  finalHtml += "</section>";
+  return finalHtml;
+}
 
 global.$gce = gce;
 
