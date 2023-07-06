@@ -5,6 +5,104 @@ body{
 	font-family: 'Oxygen',sans-serif;
 }
 
+main {
+	margin: 50px;
+	padding: 0px;
+	padding-right: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+main.table{
+	width: 82vw;
+	height: 90vw;
+	background-color: #fff5;
+	backdrop-filter:blur(7px);
+	box-shadow:  0 .4rem .8rem #0005;
+	border-radius: .8rem;
+	overflow: hidden;
+
+}
+.table_head{
+	width: 100%;
+	height: 10%;
+	background-color: #fff4;
+	padding : .8rem 1rem;
+}
+
+.table_body{
+	width: 95%;
+	max-height: calc(89% - .8rem);
+	background-color:#fffb;
+
+	margin: .8rem auto;
+	border-radius: .6rem;
+	overflow: auto;
+}
+.table_body::-webkit-scrollbar{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.table_body::-webkit-scrollbar-thumb{
+	border-radius: .5rem;
+	background-color: #0004;
+	visibility: hidden;
+}
+.table_body:hover::-webkit-scrollbar-thumb{
+	visibility: visible;
+}
+table{
+	width: 100%;
+}
+td img{
+	border-radius: 50%;
+}
+table, th, td{
+	border-collapse: collapse;
+	padding: 1rem;
+	text-align: left;
+}
+thead th{
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: lightgrey;
+
+}
+
+tbody tr:nth-child(even){
+	background-color: darkgrey;
+}
+tbody tr:hover{
+	background-color: #fff6;
+}
+.status{
+	padding: .4rem 0 ;
+	border-radius:  .8rem;
+}
+
+.status.HOD{
+	background-color: #86E49D;
+	color: #006b21;
+}
+.status.AP{
+	background-color: #D893A3;
+	color: #b30021;
+
+}
+.status.CAS{
+	background-color: #6fcaea;
+	color: black;
+
+}
+.status.AC{
+	background-color: #666666;
+	color: black;
+}
 #header-nav{
 	background-color:#00022e;
 	border: 0;
@@ -176,8 +274,33 @@ body{
 .category-tile:hover{
 	box-shadow: 0 1px 5px 1px #cccccc;
 }
+.other-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+	}
 #course-offered-tile+div{
 	margin-bottom: 50px;
+}
+
+.other-tile{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin :0 auto 15px; 
+}
+.other-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .9;
 }
 
 /**single category pages**/
