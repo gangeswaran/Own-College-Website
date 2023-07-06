@@ -1,9 +1,13 @@
-[{"name":"Theory Of Computations",
-	"short_name":"toc",
-"item":"toc.html"},
-	{"name":"Artificial Itelligence And Machine Learning",
-	"short_name":"aiml",
-	"item":"aiml.html"
+[
+	{
+		"name":"Theory Of Computations",
+		"short_name":"toc",
+		"item":"toc.html"
+	},
+	{
+		"name":"Artificial Itelligence And Machine Learning",
+		"short_name":"aiml",
+		"item":"aiml.html"
 	},
 	{
 		"name":"Algorithms",
