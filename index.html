@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrap.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 	<style>
 		body{
@@ -32,10 +33,6 @@
 		#phone{
 			color:white;
 		}
-		span{
-			color:gray;
-		}
-
 	</style>
 </head>
 <body>
@@ -50,7 +47,7 @@
 					<div class="navbar-brand">
 						<a href="index.html"><h1>Government College of Engineering,Bodinayakanur.</h1></a>
 						<p>
-							<img src="images/cse.png" alt="CSE LOGO" width="50" height="50"><span>Computer Science and Engineering!</span>
+							<img src="images/cse.png" alt="CSE LOGO" width="50" height="50"><span style="color: white">Computer Science and Engineering!</span>
 						</p>
 					</div>
 					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-expanded='false'>
@@ -66,15 +63,19 @@
 							<span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a></li>
 					<li>
 						<a href="course.html">
-							<span class="glyphicon glyphicon-tags"></span><br class="hidden-xs">Course</a>
+							<span class="glyphicon glyphicon-tags"></span><br class="hidden-xs">CSE Course</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="Other.html">
+							<span class="glyphicon glyphicon-book"> </span><br class="hidden-xs">Other Courses</a>
+					</li>
+					<li>
+						<a href="about.html">
 							<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="fc.html">
 							<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Faculty And Admins
 						</a>
 					</li>
@@ -83,6 +84,7 @@
 							<span>9789435659</span>
 						</a><div>*For query!!!</div>
 					</li>
+					
 					</ul>
 				</div>
 			</div>
@@ -124,9 +126,6 @@
 		</div>
 		
 	</footer>
-	<script src="js/jquery-3.7.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
 	<script src="js/ajax.js"></script>
 	<script src="js/script.js"></script>
 
