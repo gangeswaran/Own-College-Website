@@ -448,4 +448,13 @@ h3.course-item-title{
 		float: left;
 		width: 100%; 
 	}
+	.category-tile{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	margin :0 auto 15px; 
+	}
 }
