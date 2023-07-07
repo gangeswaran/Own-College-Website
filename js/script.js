@@ -17,7 +17,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var gce = {};
 
-var allcoursesUrl = "courses.json";
+var allcoursesUrl = "data/courses.json";
 var homeHtml = "home-snippet.html";
 var courseTitleHtml = "course-title.html";
 var courseHtml = "course-snippet.html";
