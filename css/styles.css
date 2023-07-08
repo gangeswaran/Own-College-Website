@@ -433,7 +433,7 @@ h3.course-item-title{
 @media (max-width: 479px){
 	.navbar-brand h1{
 		padding-top: 5px;
-		font-size: 6vw;
+		font-size: 5vw;
 	}
 	#course-tile,#special-course {
 		width: 280px;
@@ -449,12 +449,58 @@ h3.course-item-title{
 		width: 100%; 
 	}
 	.category-tile{
-	position: relative;
-	border: 2px solid #3f0c1f;
-	border-radius: 20px;
-	overflow: hidden;
-	width: 150px;
-	height: 150px;
-	margin :0 auto 15px; 
+		position: relative;
+		border: 2px solid #3f0c1f;
+		border-radius: 20px;
+		overflow: hidden;
+		width: 150px;
+		height: 200px;
+		margin:center; 
+	}
+	.category-tile img {
+		width: 150px;
+	}
+	.other-tile{
+		position: relative;
+		border: 2px solid #3f0c1f;
+		border-radius: 20px;
+		overflow: hidden;
+		width: 150px;
+		height: 170px;
+		margin:center;
+	}
+	.other-tile img {
+		width: 150px;
+	}
+}
+@media (max-width: 320px){
+	.navbar-brand h1{
+		padding-top: 5px;
+		font-size: 5vw;
+	}
+	#course-tile,#special-course {
+		width: 280px;
+		margin: 0 auto;
+	}
+
+	.col-xxs-12{
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%; 
+	}
+	.category-tile{
+		position: relative;
+		border: 2px solid #3f0c1f;
+		border-radius: 20px;
+		overflow: hidden;
+		width: 150px;
+		height: 150px;
+		margin :0 auto 15px; 
+	}
+	.category-tile img {
+		width: 150px;
 	}
 }
