@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/index.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/course.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/Other.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/about.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/fc.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/toc.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/aiml.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/algo.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/dbms.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/ds.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/py.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/oops.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gangeswaran.github.io/Own-College-Website/os.html</loc>
+  <lastmod>2023-07-13T09:13:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
