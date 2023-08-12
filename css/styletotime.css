@@ -1,0 +1,21 @@
+th{
+    background-color: rgba(0, 0, 255, 0.577) !important;
+    border: 2px solid black;
+    
+}
+td,tr{
+    background-color: rgba(229, 255, 127, 0.559) !important;
+    border: 2px solid black;
+}
+.lab{
+    background-color: rgb(95, 160, 104) !important;
+}
+td:hover{
+    background-color: rgba(0, 0, 0, 0.26) !important;
+}
+th:hover{
+    background-color: rgba(0, 0, 0, 0.26) !important;
+}
+div{
+    justify-content:center;
+}
